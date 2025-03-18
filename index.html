@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Mood Tracker</h1>
+        
+        <p>Select your mood:</p>
+        <div class="mood-options">
+            <button class="mood-btn" data-mood="happy">😊</button>
+            <button class="mood-btn" data-mood="sad">😢</button>
+            <button class="mood-btn" data-mood="neutral">😐</button>
+            <button class="mood-btn" data-mood="excited">🤩</button>
+        </div>
+
+        <label for="moodDate">Select Date:</label>
+        <input type="date" id="moodDate">
+        
+        <button id="submitMood">Submit</button>
+
+        <button id="clearStorage">Clear Store</button>
+
+        <h2>Past Moods</h2>
+        <div id="moodHistory"></div>
+
+        <h2>Mood Calendar</h2>
+        <div id="calendarGrid"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
